@@ -34,6 +34,15 @@
         /// <summary>
         /// Gets or sets the height of the appbar.
         /// </summary>
-        public string AppbarHeight { get; set; } = "64px";
+        [Obsolete($"Use {nameof(AppbarBaseHeight)} instead.")]
+        public string AppbarHeight
+        {
+            get => AppbarBaseHeight;
+            set => AppbarBaseHeight = value;
+        }
+        /// <summary>
+        /// Gets or sets the base height of the appbar.
+        /// </summary>
+        public string AppbarBaseHeight { get; set; } = "64px";
     }
 }
