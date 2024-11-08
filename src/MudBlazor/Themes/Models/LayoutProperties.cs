@@ -35,6 +35,6 @@
         /// Gets or sets the base height of the appbar. <br/>
         /// The actual height of the appbar is relative to this value, and it also depends on the current <see cref="Breakpoint"/>, or <see cref="MudAppBar.Dense"/>.
         /// </summary>
-        public string AppbarBaseHeight { get; set; } = "64px";
+        public string AppBarBaseHeight { get; set; } = "64px";
     }
 }
